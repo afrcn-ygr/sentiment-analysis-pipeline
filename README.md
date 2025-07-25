@@ -47,3 +47,37 @@ sentiment-analysis-pipeline/
 ```bash
 git clone https://github.com/your-username/sentiment-analysis-pipeline.git
 cd sentiment-analysis-pipeline
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+python -m textblob.download_corpora
+
+### 3. Run Pipeline
+
+```bash
+python sentiment_pipeline.py      # Get sentiment data
+python upload_to_blob.py          # Upload to Azure Blob
+
+### 4. Use Azure Data Factory
+
+	•	Create linked services to Blob and SQL
+	•	Use Copy Data to ingest into Azure SQL
+
+### 5. Open Power BI
+	•	Connect to Azure SQL
+	•	Build pie/bar/table visuals from SentimentAnalysis table
+
+### References
+	•	TextBlob Documentation
+	•	Microsoft Azure Docs
+	•	Twitter Developer Portal
+
+### Author
+
+Ama Ananaba
+
+### License
+
+This project is licensed under the MIT License.

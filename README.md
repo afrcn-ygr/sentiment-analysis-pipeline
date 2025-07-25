@@ -44,22 +44,22 @@ sentiment-analysis-pipeline/
 
 ### 1. Clone the Repo
 
-bash
+```bash
 git clone https://github.com/your-username/sentiment-analysis-pipeline.git
 cd sentiment-analysis-pipeline
-
+```
 ### 2. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
 python -m textblob.download_corpora
-
+```
 ### 3. Run Pipeline
 
-bash
+```bash
 python sentiment_pipeline.py      # Get sentiment data
 python upload_to_blob.py          # Upload to Azure Blob
-
+```
 ### 4. Use Azure Data Factory
 
 	•	Create linked services to Blob and SQL
